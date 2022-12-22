@@ -8,8 +8,14 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            function changeMode(){
+                let mybody=document.body;
+                mybody.classList.toggle('mydark')
+            }
+        </script>
     </head>
-    <body>
+    <body id="body">
         <header>
             <div id="space"></div>
             <div id="brand">Flipkart</div>
@@ -21,17 +27,17 @@
             </div>
             <button class="login">Login</button>
             <button class="cart glyphicon glyphicon-shopping-cart"> Cart</button>
+            <button class="mode" onclick="changeMode()">Mode</button>
         </header>
         <div id="icons">
             <div id="grocery">
                 <div><a class="text" href=""><img src="https://i.ibb.co/ZMpdHjX/29327f40e9c4d26b.webp" height="120px" width="100px">
                     <div >Grocery</div></a></div>
-                </div>
+            </div>
             
             <div id="mobiles">
                 <div><a class="text" href=""><img src="https://i.ibb.co/phmxKmz/22fddf3c7da4c4f4.webp" height="120px" width="100px">
                     <div >Mobiles</div></a></div>
-                
             </div>
             <div id="fashion">
                 <div><a class="text" href=""><img src="https://i.ibb.co/qnsrKZR/c12afc017e6f24cb.webp" height="120px" width="100px">
@@ -64,7 +70,7 @@
             <div id="beautytoymore">
                 <div><a class="text" href=""><img src="https://i.ibb.co/5Bj15dW/dff3f7adcf3a90c6.webp" height="120px" width="100px">
                     <div >Beauty,Toys & More</div></a></div>
-                </div>
+            </div>
             <div id="twowheelers">
                  <div><a class="text" href=""><img src="https://i.ibb.co/jWPmn8S/05d708653beff580.webp" height="120px" width="100px">
                 <div >Two Wheelers</div></a></div>

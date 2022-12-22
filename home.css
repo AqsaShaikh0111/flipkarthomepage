@@ -1,5 +1,19 @@
 body{
+    background-color: white;
+    color: black;
+}
+.mydark{
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+.mode{
+    border: transparent;
+    color: white;
+    background-color:#2874f0; 
+}
+#body{
     margin:auto;
+    display: inline-block;
 }
 header{
     display: inline-block;
