@@ -55,7 +55,22 @@ header{
     background-color: white;
     border:white
 }
+.coupon{
+    height:300px;
+    width:500px;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 400px;
+    z-index: 100;
     
+}
+.imgcp{
+    height:300px;
+    width:500px;
+}
+.btncp{
+    position: absolute;
+}
 .login{
     width:100px;
     height:45px;

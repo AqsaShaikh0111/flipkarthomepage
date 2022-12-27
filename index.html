@@ -8,12 +8,7 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script>
-            function changeMode(){
-                let mybody=document.body;
-                mybody.classList.toggle('mydark')
-            }
-        </script>
+        <script src="home.js"></script>
     </head>
     <body id="body">
         <header>
@@ -28,6 +23,7 @@
             <button class="login">Login</button>
             <button class="cart glyphicon glyphicon-shopping-cart"> Cart</button>
             <button class="mode" onclick="changeMode()">Mode</button>
+            
         </header>
         <div id="icons">
             <div id="grocery">
@@ -75,7 +71,10 @@
                  <div><a class="text" href=""><img src="https://i.ibb.co/jWPmn8S/05d708653beff580.webp" height="120px" width="100px">
                 <div >Two Wheelers</div></a></div>
             </div>
-
+            <div class="coupon">
+                <button class="btncp" onclick="couponClose()">&times;</button>
+                <img  class="imgcp"src="https://i.ibb.co/LQsr8y3/Flipkart-coupons.jpg">
+            </div>
         </div>
         <div id="Container">
                 <div id="devCarousel" class="carousel slide" data-ride="carousel" >
@@ -112,7 +111,7 @@
                 <a class="right carousel-control" href="#devCarousel" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
-
+                
         </div>
         <div id="stories">
             <h3 >Stories:Brand Directory</h3>
@@ -190,6 +189,7 @@
             Launching into the grocery vertical, Flipkart introduces Supermart that is out to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our 1 Rupee Store presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
             </p>
         </div>
+
         <footer>
         <hr>
         <div id="footdiv"><p id="tt">About</p>
@@ -233,5 +233,8 @@
         <hr>
         <p class="footertext">&copy; Flipkart</p>
         </footer>
+        <script>
+            window.onload=loadCoupon()
+        </script>
     </body>
 </html>
